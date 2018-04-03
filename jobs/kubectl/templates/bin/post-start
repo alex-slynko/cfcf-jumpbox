@@ -1,0 +1,5 @@
+#/usr/bin/env sh
+
+set -eux
+
+/var/vcap/jobs/bin/kubectl get nodes

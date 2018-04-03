@@ -1,0 +1,15 @@
+---
+name: kubectl
+
+templates:
+  bin/post-start: bin/post-start
+  bin/kubectl.erb: bin/kubectl
+  config/ca.pem.erb: config/ca.pem
+
+packages:
+  - 'kubectl'
+
+properties: {}
+
+consumes:
+  master: kube-apiserver
