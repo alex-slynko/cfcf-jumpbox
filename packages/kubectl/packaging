@@ -1,9 +1,10 @@
-set -e
+set -ex
 
 KUBERNETES_VERSION="1.10.0"
 
 main() {
   create_target_dir
+  copy_depedencies_to_bosh
   make_binaries_executable
 }
 

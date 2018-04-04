@@ -12,4 +12,5 @@ packages:
 properties: {}
 
 consumes:
-  master: kube-apiserver
+  - name: kube-apiserver
+    type: kube-apiserver

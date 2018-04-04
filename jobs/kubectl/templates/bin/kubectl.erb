@@ -1,5 +1,5 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 
-set -x
+set -e
 
-/var/vcap/packages/kubernetes/bin/kubectl --token="<%= link('kube-apiserver').p('admin-password') %>" --server=https://master.cfcr.internal:8443 --certificate-authority="/var/vcap/jobs/kubectl/config/ca.pem"
+/var/vcap/packages/kubectl/bin/kubectl --token="<%= link('kube-apiserver').p('admin-password') %>" --server=https://master.cfcr.internal:8443 --certificate-authority="/var/vcap/jobs/kubectl/config/ca.pem" $@

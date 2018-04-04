@@ -1,5 +1,5 @@
-#/usr/bin/env sh
+#!/usr/bin/env sh
 
 set -eux
 
-/var/vcap/jobs/bin/kubectl get nodes
+/var/vcap/jobs/kubectl/bin/kubectl get nodes
